@@ -75,7 +75,12 @@ module room_text(room_poly, room_text="room") {
 
 $fn = 32;
 
-
+/* module building_outline
+ * 
+ * draws outline of buidling with rouded walls or not
+ * @param poly  array           The array polygon outline of the building
+ * @global round_edges bool     whether or not to round edges
+ */
 module building_outline(poly) {
     
     if ( round_edges == true) {
